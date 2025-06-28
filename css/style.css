@@ -1,0 +1,306 @@
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  font-family: Muller, sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin-right: 375px;
+  margin-left: 375px;
+}
+
+
+/* header */
+
+.header {
+  height: 154px;
+  margin-top: 30px;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  min-height: 54px;
+}
+
+.header-logo {
+  margin-right: 40px;
+}
+
+.header-phone {
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 500;
+  color: #666666;
+  min-width: 173px;
+
+}
+
+.header-link {
+  margin-left: auto;
+}
+
+.header-nav-lists {
+  display: flex;
+  margin-top: 30px;
+}
+
+.header-nav-left-list {
+  display: flex;
+  padding-left:45px
+}
+
+.header-nav-left-item { 
+  margin-right: 45px;
+}
+
+.header-nav-right-list {
+  margin-left: 114px;
+  display: flex;
+  /*  */
+}
+
+.header-nav-right-item {
+  padding-right: 45px;
+}
+
+.header-nav-right-link {
+  min-width: 67px;
+  min-height: 20px;
+}
+
+/* offer */
+
+.offer {
+  margin-top: 70px;
+}
+
+.section-heading {
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.left-column{ 
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.offer-left-item
+.big {
+  height: 100%;
+}
+
+.big {
+  margin-left: auto;
+}
+
+.offer-left-list {
+  display: flex;
+}
+
+
+.offer-left-item-heading{
+  margin-bottom: 15px;
+}
+
+.offer-left-list-cost{
+  margin-bottom: 47px;
+}
+
+.offer--btn {
+  padding-bottom: 40px;
+}
+
+.offer-left-item-heading
+.offer-left-list-cost
+.offer--btn {
+  padding-left: 45px;
+}
+
+/* about */
+
+.section-about{
+  margin-top: 46px;
+  margin-bottom: 70px;
+  line-height: 200%;
+}
+
+/* services */
+
+.section-services{
+  margin-bottom: 70px;
+}
+
+.section-services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-services-card {
+  flex: 1 1 47%;           /* фиксируем ширину карточки на 50% */
+  box-sizing: border-box; /* учитываем padding внутрь */
+  background: #f5f5f5;
+  margin-bottom: 24px;
+}
+
+.services-card-bottom-link {
+  font-weight: 800;
+  line-height: 200%;
+}
+
+.services-card-bottom-description{
+  line-height: 200%;
+}
+
+.section-services-card:not(:nth-child(2n)) {
+  margin-right: 20px;
+}
+
+
+/* advantages */
+
+.advantages {
+  margin-bottom: 70px;
+}
+
+.section-advantages-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.section-advantages-item {
+  box-sizing: border-box;
+  /* flex: 0 0 22%; */
+  line-height: 200%;
+  margin-bottom: 20px;
+  
+}
+
+.section-advantages-item:not(:nth-child(4n)) {
+  margin-right: 20px;
+}
+
+/* layout */
+
+.layout {
+  margin-bottom: 70px;
+}
+
+.layout-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout-item {
+  flex : 0 0 30%;
+  margin-bottom: 24px;
+}
+
+.layout-item-img {
+  margin-bottom: 32px;
+}
+
+.layout-item-name {
+  margin-bottom: 16px;
+}
+
+.layout-item-location {
+  margin-bottom: 20px;
+}
+
+.layout-item-link-btn {
+  padding: 13px 20px
+}
+
+.layout-item-rent {
+  margin-bottom: 16px;
+}
+
+.star-cont {
+  margin-bottom: 16px;
+}
+
+.layout-item:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+
+/* tour */
+
+.tour-form-list {
+  display:flex ;
+  flex-grow: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-row {
+  display: block;
+  margin-top: 15px;
+}
+
+.section-tour {
+  margin-bottom: 70px;
+}
+
+
+/* contacts */
+
+
