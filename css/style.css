@@ -165,6 +165,7 @@ html {
   padding-left: 40px;
   margin-bottom: 20px;
   color: #333333;
+  font-weight: 400;
 }
 
 .card-offer {
@@ -282,6 +283,17 @@ html {
   line-height: 200%;
 }
 
+.container-about {
+  width: 888px;
+  margin-right: auto;
+}
+
+.section-about-info {
+  color: #000000;
+  font-size: 16px;
+  line-height: 2;
+}
+
 /* services */
 
 .section-services{
@@ -294,19 +306,66 @@ html {
 }
 
 .section-services-card {
-  flex: 1 1 47%;           /* фиксируем ширину карточки на 50% */
-  box-sizing: border-box; /* учитываем padding внутрь */
-  background: #f5f5f5;
+  flex: 1 1 47%;
+  box-sizing: border-box;
   margin-bottom: 24px;
+  display: flex;
+  min-height: 330px;
+  background-image: url(/images/shampane.svg);           
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;  
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  flex-direction: column;
+
+}
+
+.services-card-img {
+  flex: 1; /* половина */
+  background-size: cover;
+  background-position: center;
+}
+
+.services-card-bottom {
+  flex: 1; 
+  background-color: #fff; 
+  color: #000;
+  
+}
+
+.shampane {
+  background-image: url('/images/shampane.svg');
+}
+
+.hall {
+  background-image: url('/images/hall.svg');
+}
+
+.pool {
+  background-image: url('/images/pool.svg');
+}
+
+.cars {
+  background-image: url('/images/cars.svg');
 }
 
 .services-card-bottom-link {
-  font-weight: 800;
+  color: #cc9933;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 200%;
+  padding-left: 45px;
+  margin-top: 26px;
+  display: inline-block;
 }
 
 .services-card-bottom-description{
   line-height: 200%;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 45px;
+  max-width: 402px;
 }
 
 .section-services-card:not(:nth-child(2n)) {
